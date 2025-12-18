@@ -1,6 +1,9 @@
 package com.LiveStats.LiveStats.modulos.ixc.dto;
 
-public record ResponseClientes(
+import java.util.List;
 
+public record ResponseClientes(
+        String total,
+        List<Cliente> registros
 ) {
 }

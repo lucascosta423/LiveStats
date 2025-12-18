@@ -1,12 +1,12 @@
 package com.LiveStats.LiveStats.modulos.ixc.dto;
 
+import com.LiveStats.LiveStats.modulos.ixc.enums.Status;
+
 public record RequestBody(
         String qtype,
-        String query,
+        Status query,
         String oper,
         String page,
-        String rp,
-        String sortname,
-        String sortorder
+        String rp
 ) {
 }
