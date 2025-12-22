@@ -35,5 +35,5 @@ jobs:
           context: .
           push: true
           tags: |
-            lucassantos/livestats:latest
-            lucassantos/livestats:${{ github.run_number }}
+            ${{ secrets.DOCKERHUB_USERNAME }}/livestats:latest
+            ${{ secrets.DOCKERHUB_USERNAME }}/livestats:${{ github.run_number }}
