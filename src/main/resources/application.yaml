@@ -6,13 +6,12 @@ spring:
 #      host: localhost
 #      port: 6379
 
-
-server:
-  port: 8080
-  servlet:
-    context-path: /api/
-
 ixc:
   baseUrl: ${BASE_URL}
   id-user: ${ID_USER}
   token: ${TOKEN}
+
+app:
+  logo-url: ${APP_LOGO_URL}
+  header-gradient: ${APP_HEADER_GRADIENT}
+  header-font-color: ${APP_HEADER_FONT_COLOR}

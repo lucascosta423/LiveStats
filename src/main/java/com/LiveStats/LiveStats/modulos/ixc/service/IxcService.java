@@ -17,16 +17,16 @@ public class IxcService {
     }
 
 
-    public ResponseLogins getLoginsByStatus(Status status) {
+    public ResponseLogins getAllLogins() {
         String response = webClient.post()
                 .uri("/radusuarios")
                 .bodyValue(
                         new RequestBody(
-                                "radusuarios.online",
-                                status,
+                                "radusuarios.ativo",
+                                Status.S,
                                 "=",
                                 "1",
-                                getTotal("radusuarios","radusuarios.online", status).total()
+                                getTotal("radusuarios","radusuarios.ativo", Status.S).total()
                         )
                 )
                 .retrieve()

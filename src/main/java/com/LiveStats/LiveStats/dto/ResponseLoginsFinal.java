@@ -3,7 +3,7 @@ package com.LiveStats.LiveStats.dto;
 import java.util.List;
 
 public record ResponseLoginsFinal(
-        String total,
+        Integer total,
         List<LoginsStats> logins
 ) {
 
