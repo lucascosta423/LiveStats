@@ -41,7 +41,7 @@ public class ServiceAplication {
         Map<Status, List<Login>> porStatus =
                 todosLogins.stream()
                         .collect(Collectors.groupingBy(
-                                login -> Status.valueOf(login.online())
+                                login -> Status.from(login.online())
                         ));
 
         ResponseLoginsFinal online =
