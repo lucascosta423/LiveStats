@@ -123,7 +123,7 @@ O projeto requer as seguintes variáveis de ambiente para funcionar corretamente
 
 | Variável | Descrição | Exemplo |
 |----------|-----------|---------|
-| `BASE_URL` | URL base da API IXC Soft | `https://api.ixcsoft.com.br/v1` |
+| `BASE_URL` | URL base da API IXC Soft | `https://api.ixcsoft.com.br/webservice/v1/` |
 | `ID_USER` | ID do usuário para autenticação | `12345` |
 | `TOKEN` | Token de acesso à API | `abc123xyz456token` |
 
